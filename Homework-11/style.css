@@ -1,0 +1,91 @@
+.body{
+  min-height: 200vh;
+}
+.body--fixed{
+  overflow-y: hidden;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+.btn-open{
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #cfcfcfc1;
+}
+.btn-open:hover{
+  animation: sizes 2s infinite .1s;
+}
+.modal{
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  background: #3b3b3bc1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+.modal--open{
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+.modal__window{
+  position: relative;
+  width: 50vw;
+  min-height: 40vh;
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  background-repeat: 12px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+.modal__close-btn{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 3px solid #3b3b3bc1;
+  background: none;
+  border-radius: 10px;
+  color: #3b3b3bc1;
+}
+@keyframes sizes{
+  0%{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  50%{
+    width: 350px;
+    height: 100px;
+    border-radius: 30px;
+  }
+  100%{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+  }
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
