@@ -1,5 +1,6 @@
 .body{
   min-height: 200vh;
+  background: #ececec;
 }
 .body--fixed{
   overflow-y: hidden;
@@ -88,5 +89,4 @@
   100%{
     opacity: 1;
   }
-
 }
