@@ -48,10 +48,9 @@
   });
 
   document.addEventListener('keydown', event => {
+    if(event.code=='Escape' && body.classList.contains('body--opened-modal')){}
     event.preventDefault()
-    if (event.code === 'Escape') {
-      body.classList.remove('body--opened-modal');
-    }
+    body.classList.remove('body--opened-modal');
   });
 
 })();
@@ -192,4 +191,5 @@
   const telinputs=document.querySelectorAll('input[type="tel"]')
   const im=new Inputmask('+7 (999) 999-99-99')
   im.mask(telinputs)
+
 })();
