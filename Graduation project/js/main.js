@@ -31,28 +31,28 @@
 // ===================================== Modal
 
 (function () {
-  const btn = document.querySelector('.about__img-button');
-  const modal = document.querySelector('.modal');
-  const body = document.querySelector('.body');
+  const modal = document.querySelector('.modal')
+  const modalButton = document.querySelector('.about__img-button')
 
-  btn.addEventListener('click', event => {
-    event.preventDefault()
-    body.classList.add('body--opened-modal');
-  });
+  modalButton.addEventListener('click', openModal)
+  modal.addEventListener('click', closeModal)
 
-  modal.addEventListener('click', event => {
-    if (event.target.closest('.modal__cancel') || event.target.classList.contains('modal') && event.target) {
-      event.preventDefault()
-      body.classList.remove('body--opened-modal');
+  function openModal(e) {
+    e.preventDefault()
+    document.body.classList.toggle('body--opened-modal')
+  }
+
+  function closeModal(e) {
+    e.preventDefault()
+
+    const target = e.target
+
+    if (target.closest('.modal__cancel') || target.classList.contains('modal')) {
+      document.body.classList.remove('body--opened-modal')
     }
-  });
 
-  document.addEventListener('keydown', event => {
-    if(event.code=='Escape' && body.classList.contains('body--opened-modal')){}
-    event.preventDefault()
-    body.classList.remove('body--opened-modal');
-  });
-
+  }
+  
 })();
 
 // ===================================== Tabs
@@ -193,3 +193,4 @@
   im.mask(telinputs)
 
 })();
+
