@@ -1,0 +1,56 @@
+body{
+  background: rgb(24, 24, 24);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 300px auto;
+}
+.block{
+  background: rgb(94, 94, 94);
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+.text{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  transform: translate(90px,130px);
+  opacity: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.line{
+  position: absolute;
+  background: white;
+  width: 0px;
+  height: 20px;
+  transform: translate(-150px,-100px);
+  border-radius: 10px;
+}
+
+@keyframes line-size {
+  from{
+    width: 0px;
+  }
+  to{
+    width: 600px;
+  }
+}
+.block:hover .line{
+  animation: line-size 3s forwards;
+}
+
+@keyframes text-form {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.block:hover .text{
+  animation: text-form 0.5s 3s forwards;
+}

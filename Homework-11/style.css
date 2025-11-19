@@ -1,0 +1,108 @@
+body {
+  min-height: 200vh;
+  background: #e4e4e4;
+  font-family: "Montserrat",sans-serif;
+}
+
+.body--fixed {
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.btn--open {
+  width: 300px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  background: #c3c3c3;
+  color: #4e4e4e;
+}
+
+.btn--open:hover{
+  animation: button 3s infinite ;
+}
+
+.modal {
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  background: #626262c1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+  display: flex;
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__window {
+  position: relative;
+  width: 50vw;
+  min-height: 40vh;
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  background-repeat: 12px;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.modal__window-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: #9f9f9fc1;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(82, 82, 82);
+}
+.modal__btn-signup{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  left: 50px;
+  height: 80px;
+  border-radius: 10px;
+  font-size: 25px;
+  background: rgb(222, 222, 222);
+}
+.modal__btn-signup:hover{
+  background: rgb(190, 190, 190);
+  transition: all .5s;
+}
+
+@keyframes button {
+  0% {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  50%{
+    width: 350px;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 35px;
+  }
+  100%{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+}
