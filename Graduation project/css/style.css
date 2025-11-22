@@ -1,0 +1,1154 @@
+@import "reset.css";
+@import "fonts.css";
+@import "global.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+/* ============================== MEDIA ============================== */
+/* ============================== MEDIA ============================== */
+
+@media (max-width: 1700px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header__modal {
+    position: fixed;
+    top: 138px;
+    left: 20px;
+  }
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    position: absolute;
+    right: -70px;
+    top: 170px;
+    box-shadow: inset 0 0 110px 14px #000;
+    mix-blend-mode: lighten;
+    opacity: 1;
+    width: 700px;
+  }
+
+  .ai__decor-right {
+    position: absolute;
+    right: -450px;
+    top: 30px;
+  }
+
+  .ai__decor-top {
+    position: absolute;
+    top: -110px;
+    right: -200px;
+  }
+
+  /* ===================== FOOTER ===================== */
+
+  .footer__up-text {
+    display: none;
+  }
+}
+
+@media (max-width: 1550px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header__modal {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1400px) {
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    right: 100px;
+    top: 195px;
+    width: 600px;
+  }
+
+  .ai__decor-right {
+    right: -90px;
+    top: 215px;
+    width: 400px;
+  }
+
+  .ai__decor-top {
+    top: 110px;
+    right: 140px;
+    width: 400px;
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .why-us__brain {
+    width: 1000px;
+    top: 50px;
+  }
+
+}
+
+@media (max-width: 1250px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header {
+    background: url(../img/decor/hero__bg.png) 60% center / cover no-repeat;
+  }
+
+  .hero__button {
+    background: linear-gradient(180.00deg, rgba(3.1874969005584717, 224.78253173828125, 255, 1), rgba(18.797393798828125, 205.0625, 193.8865966796875, 1) 100%);
+    box-shadow: none;
+  }
+
+
+  /* ===================== ABOUT ===================== */
+
+  .main__about {
+    padding: 60px 0px 80px;
+  }
+
+  .about__list-item-top {
+    max-width: 385px;
+  }
+
+  .about__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__list-item:nth-child(7) {
+    max-width: 800px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ===================== AI ===================== */
+
+  .main_ai {
+    padding: 60px 0px 80px;
+  }
+
+  .ai__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 800px;
+  }
+
+  .ai__title {
+    text-align: center;
+  }
+
+  .ai__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 580px;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+    width: min(600px, 80vw);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ai__decor-right {
+    display: none;
+  }
+
+  .ai__decor-top {
+    display: none;
+  }
+
+  .ai__button {
+    margin-top: 450px;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .why-us__brain {
+    width: 800px;
+    top: 100px;
+  }
+
+  /* ===================== FOOTER ===================== */
+
+  .footer__up {
+    bottom: 235px;
+    left: 15px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  /* ===================== IMPORTANT ===================== */
+
+  .important__title {
+    text-align: center;
+  }
+
+  .important__list-item {
+    flex-direction: column;
+    justify-self: center;
+  }
+
+  .important__list-item-3 {
+    margin-right: 0px;
+  }
+
+  .important__list-text-1 {
+    max-width: 293px;
+    text-align: center;
+  }
+
+  .important__list-text-2 {
+    order: 1;
+    max-width: 293px;
+    text-align: center;
+  }
+
+  .important__list-text-3 {
+    order: 1;
+    max-width: 293px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .important__list-text-4 {
+    order: 1;
+    max-width: 293px;
+    text-align: center;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__decor {
+    left: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header {
+    /* background: url(../img/decor/hero__bg-2560px.png) 70% center / cover no-repeat; */
+    background: none;
+  }
+
+  .hero__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__guarantee {
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .header__switch {
+    display: none;
+  }
+
+  .header__active {
+    justify-content: center;
+  }
+
+  .hero__bg-1000px {
+    display: block;
+    top: -180px;
+    left: 295px;
+    opacity: 0.6;
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .why-us__brain {
+    display: none;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .author__about {
+    text-align: center;
+  }
+
+  .author__about-text {
+    max-width: 550px;
+  }
+
+  .main__author {
+    padding: 60px 0px 0px;
+  }
+
+  .author__decor {
+    left: -50px;
+    top: 500px;
+  }
+
+  /* ===================== AD ===================== */
+
+  .ad__title {
+    font-size: 46px;
+  }
+
+  .ad__button {
+    padding: 12px 24px 12px;
+  }
+
+  .ad__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===================== VACANCIES ===================== */
+
+  .vacancies__title {
+    font-size: 46px;
+  }
+
+  .vacancies__button {
+    padding: 12px 24px 12px;
+  }
+
+  .vacancies__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===================== FOOTER ===================== */
+
+  .footer__cols-contacts {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  .footer__cols-number {
+    order: 1;
+  }
+
+  .footer_cols-email {
+    order: 2;
+  }
+
+  .footer__socials {
+    align-items: start;
+  }
+
+  .footer__up {
+    bottom: 260px;
+  }
+
+  .footer__socials-text {
+    display: none;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  /* ===================== ABOUT ===================== */
+
+  .about__list-item:nth-child(7) {
+    max-width: 385px;
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .main__why-us {
+    padding: 60px 0px 80px;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__decor {
+    left: -100px;
+    top: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* ===================== AD ===================== */
+
+  .ad__title {
+    font-size: 46px;
+  }
+
+  .ad__button {
+    display: none;
+  }
+
+  .button__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ad__button-bottom {
+    margin-top: 40px;
+    display: block;
+  }
+
+  .main__ad {
+    padding: 80px 0px 60px;
+  }
+
+  .ad__top {
+    justify-content: center;
+  }
+
+  /* ===================== VACANCIES ===================== */
+
+  .vacancies__title {
+    font-size: 46px;
+  }
+
+  .vacancies__button {
+    display: none;
+  }
+
+  .button__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vacancies__button-bottom {
+    margin-top: 40px;
+    display: block;
+  }
+
+  .main__vacancies {
+    padding: 80px 0px 60px;
+  }
+
+  .vacancies__top {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 725px) {
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 700px;
+    width: min(500px, 90vw);
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .why-us__title {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header__top-inner {
+    justify-content: end;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__tel {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 330px;
+    padding: 39px 30px;
+    z-index: 10;
+    box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.35);
+    background: linear-gradient(313deg, #0b4d69 0%, #104c54 100%);
+    font-size: 24px;
+    transform: translateY(-481px) translateX(300px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    border-radius: 0 0 0 22px;
+  }
+
+  .body--opened-menu .header__tel {
+    transform: translateY(-481px) translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .hero {
+    margin-top: 30px;
+  }
+
+  .hero__title {
+    font-size: 86px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+
+  .hero__guarantee {
+    margin-bottom: 300px;
+  }
+
+  .header__active {
+    padding-bottom: 50px;
+  }
+
+  .header__modal {
+    display: block;
+    position: absolute;
+    left: auto;
+    right: 20px;
+    top: 520px;
+  }
+
+  .header__modal img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header__modal-text {
+    display: none;
+  }
+
+  .header__modal-social {
+    display: block;
+    top: 640px;
+  }
+
+  .header__modal-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__modal-social img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .hero__bg-1000px {
+    display: block;
+    top: 310px;
+    left: 10px;
+    opacity: 0.6;
+    width: 600px;
+  }
+
+  .hero__button {
+    background: linear-gradient(180.00deg, rgba(3.1874969005584717, 224.78253173828125, 255, 0.66), rgba(18.797393798828125, 205.0625, 193.8865966796875, 1) 100%);
+    box-shadow: 0px 7px 20px -7px rgba(0, 224, 255, 1);
+  }
+
+  /* ===================== IMPORTANT ===================== */
+
+  .important__list {
+    gap: 20px;
+  }
+
+  .important__list-img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .important__list-text-1 {
+    max-width: 250px;
+  }
+
+  .important__list-text-2 {
+    max-width: 250px;
+  }
+
+  .important__list-text-3 {
+    max-width: 250px;
+  }
+
+  .important__list-text-4 {
+    max-width: 250px;
+  }
+
+  /* ===================== PROGRAM ===================== */
+
+  .program__title {
+    font-size: 46px;
+  }
+
+  .main__program {
+    padding: 60px 0px 60px;
+  }
+
+  .accordion-llist__control-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion-list__control-left img {
+    margin-top: -13px;
+  }
+
+  .program__button {
+    max-width: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  /* ===================== AI ===================== */
+
+  .ai__title {
+    font-size: 46px;
+  }
+
+  .ai__img {
+    top: 700px;
+  }
+
+  .ai__button {
+    margin-top: 400px;
+  }
+
+  /* ===================== IMPORTANT ===================== */
+
+  .main__important {
+    padding: 60px 0px 80px;
+  }
+
+  .important__list-item {
+    gap: 10px;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__about-title {
+    font-size: 46px;
+    text-align: left;
+  }
+
+  .author__about-text {
+    text-align: left;
+  }
+
+  .author__inner {
+    gap: 20px;
+  }
+
+  /* ===================== AD ===================== */
+
+  .ad__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===================== VACANCIES ===================== */
+
+  .vacancies__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===================== FOOTER ===================== */
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__cols {
+    align-items: start;
+    margin-top: 40px;
+  }
+
+  .footer__up {
+    bottom: 380px;
+    right: 30px;
+    left: auto;
+  }
+
+  .footer__logo img {
+    width: 260px;
+  }
+
+  .footer__developed {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+
+  /* ===================== HEADER ===================== */
+
+  .hero__title {
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 70px;
+  }
+
+  .hero__about {
+    margin-bottom: 40px;
+  }
+
+  .hero__guarantee {
+    align-items: start;
+    gap: 20px;
+  }
+
+  .hero__guarantee-text {
+    font-size: 16px;
+  }
+
+  .header__modal {
+    top: 430px;
+  }
+
+  .header__modal-social {
+    top: 555px;
+  }
+
+  .hero__button {
+    padding: 24px 26px 45px;
+  }
+
+  .hero__bg-1000px {
+    display: block;
+    top: 260px;
+    left: -40px;
+    opacity: 0.6;
+    width: 500px;
+  }
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 750px;
+  }
+
+  .ai__button {
+    margin-top: 400px;
+    font-size: 10px;
+  }
+
+  /* ===================== IMPORTANT ===================== */
+
+  .important__list-text {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  /* ===================== AD ===================== */
+
+  .ad__title {
+    font-size: 30px;
+  }
+
+  .ad__top {
+    margin-bottom: 30px;
+  }
+
+  /* ===================== VACANCIES ===================== */
+
+  .vacancies__title {
+    font-size: 30px;
+  }
+
+  .vacancies__top {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  /* ===================== HEADER ===================== */
+
+  .hero__bg-1000px {
+    display: block;
+    top: 290px;
+    left: -40px;
+    opacity: 0.6;
+    width: 500px;
+  }
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 800px;
+  }
+
+  .ai__button {
+    margin-top: 400px;
+  }
+
+  /* ===================== IMPORTANT ===================== */
+
+  .important__title {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+
+  /* ===================== WHY_US ===================== */
+
+  .why-us__list-item {
+    gap: 10px;
+  }
+
+  .why-us__button {
+    padding: 24px 26px 45px;
+  }
+
+  .why-us__list-img img {
+    width: 30px;
+  }
+
+  /* ===================== PROGRAM ===================== */
+
+  .accordion-list__control-last {
+    padding: 18px 22px 45px 17px;
+    position: relative;
+  }
+
+  .accordion-llist__control-development {
+    position: absolute;
+    top: 70px;
+    left: 33px;
+  }
+
+  .program__button {
+    padding: 24px 26px 45px;
+  }
+
+  /* ===================== FOOTER ===================== */
+
+  .footer__up-button {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media(max-width: 480px) {
+  .ad__prev {
+    left: 0px;
+  }
+
+  .ad__next {
+    right: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header__modal {
+    top: 460px;
+  }
+
+  .header__modal-social {
+    top: 580px;
+  }
+
+  /* ===================== ABOUT ===================== */
+
+  .about__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 40px;
+  }
+
+  /* ===================== AI ===================== */
+
+  .ai__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .ai__img {
+    top: 650px;
+  }
+
+  .ai__button {
+    margin-top: 300px;
+    padding: 24px 26px 45px;
+  }
+
+  /* ===================== WHY-US ===================== */
+
+  .why-us__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 35px;
+  }
+
+  .why-us__text {
+    font-size: 14px;
+  }
+
+  /* ===================== PROGRAM ===================== */
+
+  .program__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 35px;
+  }
+
+  .program__text {
+    font-size: 14px;
+  }
+
+  .accordion__content__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    background: linear-gradient(180deg, #fff 64.06%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-height: 106px;
+
+  }
+
+  .accordion__content__item {
+    margin-bottom: 25px;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__about-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .authot__img img {
+    width: 331px;
+  }
+
+  .author__decor {
+    top: 550px;
+    width: 800px;
+  }
+
+  .author__img-name {
+    top: 400px;
+    left: 180px;
+    font-size: 12px;
+  }
+
+  .author__img-name span {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 430px) {
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 680px;
+  }
+
+  .ai__button {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 720px;
+  }
+
+  .ai__button {
+    margin-top: 300px;
+  }
+
+  /* ===================== AD ===================== */
+
+  .ad__title {
+    font-size: 28px;
+  }
+
+  .slide__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .slide__img .slide__img-big {
+    width: 300px;
+  }
+
+  .slide__img-date {
+    top: 15px;
+    left: 210px;
+  }
+
+  .ad__next {
+    top: 65px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .ad__prev {
+    top: 65px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .slide__info {
+    max-width: 310px;
+  }
+
+  .ad__button-bottom {
+    margin-top: 10px;
+  }
+
+  /* ===================== VACANCIES ===================== */
+
+  .vacancies__title {
+    font-size: 28px;
+  }
+
+  .slide__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .slide__img .slide__img-big {
+    width: 300px;
+  }
+
+  .slide__img-date {
+    top: 15px;
+    left: 210px;
+  }
+
+  .vacancies__next {
+    top: 65px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .vacancies__prev {
+    top: 65px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .slide__info {
+    max-width: 310px;
+  }
+
+  .vacancies__button-bottom {
+    margin-top: 10px;
+  }
+
+  .slide__text-container {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width: 410px) {
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 760px;
+  }
+
+  .ai__button {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  /* ===================== HEADER ===================== */
+
+  .header__modal {
+    top: 480px;
+  }
+
+  .header__modal-social {
+    top: 600px;
+  }
+
+  .hero__bg-1000px {
+    display: block;
+    top: 350px;
+    left: -20px;
+    width: 400px;
+  }
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 770px;
+  }
+
+  .ai__button {
+    margin-top: 240px;
+  }
+
+  /* ===================== IMPORTANT ===================== */
+
+  .important__title {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: left;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  /* ===================== AI ===================== */
+
+  .ai__img {
+    top: 800px;
+  }
+
+  /* ===================== AUTHOR ===================== */
+
+  .author__decor {
+    top: 650px;
+  }
+}
